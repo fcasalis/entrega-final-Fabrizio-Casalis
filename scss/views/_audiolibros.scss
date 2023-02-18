@@ -1,0 +1,88 @@
+/*imports*/
+@import "../components/card";
+
+/* estilos de audilibros*/
+.titulo-audiolibros{
+
+    margin-top: 1rem;
+    text-align: center;
+    font-family: "Lato";
+    font-style: italic;
+    font-size: 2rem;
+    color: #144272;
+    margin: 1.5rem ;}
+
+
+.audiolibros-container{
+    margin: 3rem;
+    max-width: 1500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4 1fr);
+    gap: 2rem;
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 4rem;
+    }
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .card-audiolibros {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin: 0 1.5rem;
+        @extend .card;
+       
+    
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 1.5rem;
+        }
+        @include mobile {
+            display: flex;
+            align-items: center;
+            margin: 0 1.5rem;
+
+        }
+        iframe {
+            margin: 1.5rem;
+            @include mobile {
+                display: inline-block;
+                width: 400px;
+                margin:  1.5rem;  
+
+            }
+        }
+    .card-audiolibros-titulo-y-parrafo {
+        @include mobile {
+            display: none; 
+        }
+        h2{
+            margin: 1.5rem  ;
+            font-family: "lato";
+            font-style: italic;
+           
+
+        }
+        p {
+            margin: 1.5rem;
+            font-family: "lato", sans-serif ;
+        }    
+        }    
+        
+        
+     
+    
+    }
+}

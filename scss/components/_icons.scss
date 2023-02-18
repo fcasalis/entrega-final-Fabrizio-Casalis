@@ -1,0 +1,11 @@
+@import "../base/hover-effect";
+
+
+.icon-header{
+    font-size: 2.2rem;
+    color: $color-sec;
+    margin: auto 0.5rem;
+}
+.icon-social{
+    @include hover-1;
+}

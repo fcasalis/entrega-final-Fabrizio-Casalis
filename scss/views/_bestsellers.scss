@@ -1,0 +1,99 @@
+/*imports*/
+@import "../components/card";
+
+/*estilos de bestsellers*/
+.main-bestsellers{
+    
+    .titulo-bestsellers {
+        margin-top: 1rem;
+        text-align: center;
+        font-family: "Lato";
+        font-style: italic;
+        font-size: 2rem;
+        color: #144272;
+        padding: 1rem;
+
+    }
+
+    .bestsellers-container {
+        margin: 3rem auto;
+        max-width: 1500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+        @include tablet {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        }
+        @include mobile {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        }
+        .card-bestsellers {
+            display: grid; 
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: 1fr;
+            @extend .card;
+
+        
+            
+            @include tablet {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 1.5rem}
+
+            @include mobile {
+                margin: 0 1.5rem;
+
+            }
+            .img-bestsellers {
+                display: inline-block;
+                margin-top: 1.5rem;            }
+            .card-bestsellers-titulo-y-parrafo h2 {
+                text-align: center;
+                margin: 1rem;
+                font-family: "lato";
+                font-style: italic;
+                @include mobile {
+                    display: none;
+                }
+
+                }
+          
+            }
+            .card-bestsellers-titulo-y-parrafo p {
+                margin-top: 1rem;
+                padding: 0 4rem;
+                font-family: "lato", sans-serif ;
+                @include mobile{
+                    display: none;
+                }
+             
+            }
+        }
+        .btn-container1 {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            h4{
+                font-size: 1.3rem;
+                margin: auto;
+                color: whitesmoke;
+                font-family: "lato";
+            }
+           
+
+        
+           
+           
+        }
+    }
+   
+
+    

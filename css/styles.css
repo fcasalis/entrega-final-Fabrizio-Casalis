@@ -1,14 +1,46 @@
-/*links externos*/
-/*fonts*/
+/*reset*/
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-/*reset y background*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none !important;
   list-style-type: none !important; }
+  * ::-webkit-scrollbar {
+    display: none; }
+
+/*links externos*/
+/*fonts*/
+/*iconos bootstrap*/
+/*utilities*/
+/*media-queries*/
+/*mobile*/
+/*tablet*/
+/*desktop*/
+/*colores*/
+/*components*/
+/*header*/
+.icon-header {
+  font-size: 2.2rem;
+  color: #144272;
+  margin: auto 0.5rem; }
+
+.icon-social:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px; }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0); }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0); } }
 
 /*estilos del header*/
 header {
@@ -18,31 +50,41 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 1.5rem;
-  background-color: #144272;
+  background-color: #0A2647;
   transition: 0.3s; }
   @media screen and (max-width: 580px) {
     header {
       padding: 10px 20px; } }
   header .logo1 a {
     margin-left: 4rem;
-    color: white !important;
+    color: whitesmoke !important;
     display: block;
     font-family: "lato";
     font-size: 2rem; }
     header .logo1 a:hover {
-      text-shadow: 0 0 5px whitesmoke; }
+      animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      transform: translate3d(0, 0, 0);
+      perspective: 1000px; }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0); }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0); } }
   header .navbar1 {
     margin-right: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center; }
     header .navbar1 input:checked ~ .menu1 {
-      right: 0px;
-      box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3); }
+      right: 0px; }
     @media screen and (max-width: 580px) {
       header .navbar1 {
-        right: 0;
-        box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3); } }
+        right: 0px; } }
     header .navbar1 .menu1 {
       margin: 0;
       padding: 0;
@@ -61,7 +103,7 @@ header {
           position: fixed;
           top: 0;
           right: -600px;
-          background: #144272;
+          background: #0A2647;
           width: 100%;
           height: auto;
           padding-top: 65px; } }
@@ -73,21 +115,22 @@ header {
         display: block;
         font-family: "lato";
         font-size: 1.3rem;
-        color: white !important;
-        padding: 25px;
-        transition: .3s; }
+        color: whitesmoke !important;
+        padding: 25px; }
         header .navbar1 .menu1 li a:hover {
-          text-shadow: 0 0 5px whitesmoke;
-          box-shadow: 0 -5px 0px whitesmoke, 500px 0 0 rgba(255, 255, 255, 0.1) inset;
-          padding: 25px; }
-          @media screen and (max-width: 580px) {
-            header .navbar1 .menu1 li a:hover {
-              padding: 25px;
-              font-size: 25px;
-              box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset; }
-              header .navbar1 .menu1 li a:hover:hover {
-                box-shadow: 0 -5px 0px whitesmoke inset, 500px 0 0 rgba(255, 255, 255, 0.1) inset;
-                padding: 25px; } }
+          animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          transform: translate3d(0, 0, 0);
+          perspective: 1000px; }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0); }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0); } }
         @media screen and (max-width: 580px) {
           header .navbar1 .menu1 li a {
             padding: 30px;
@@ -142,6 +185,105 @@ header {
       header .navbar1 .toggle-menu {
         display: block; } }
 
+/*footer*/
+.icon-header {
+  font-size: 2.2rem;
+  color: #144272;
+  margin: auto 0.5rem; }
+
+.icon-social:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px; }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0); }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0); } }
+
+/*estilos del footer*/
+.pie {
+  padding: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem; }
+  .social-links .icon-social:hover {
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px; }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0); }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0); } }
+
+/*boton*/
+/*boton siguiente*/
+.btn-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  margin: auto; }
+  .btn-container .btn {
+    margin-bottom: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    background: #144272;
+    color: whitesmoke;
+    border-radius: .6rem;
+    padding: 8px 12px 8px;
+    font-family: "lato";
+    font-size: 1.2rem; }
+    .btn-container .btn:hover {
+      animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      transform: translate3d(0, 0, 0);
+      perspective: 1000px; }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0); }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0); } }
+
+:hover {
+  transform: translateY(-2px); }
+
+/*views*/
+/*imports*/
+.card, .main-index-container .index-card, .main-bestsellers .bestsellers-container .card-bestsellers, .audiolibros-container .card-audiolibros, main .comunidad-card-container .comunidad-card, .main-about .card-about {
+  padding: 1rem;
+  background-color: white;
+  gap: 1rem;
+  border-radius: .5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
+  .card:hover, .main-index-container .index-card:hover, .main-bestsellers .bestsellers-container .card-bestsellers:hover, .audiolibros-container .card-audiolibros:hover, main .comunidad-card-container .comunidad-card:hover, .main-about .card-about:hover {
+    transform: translate3D(0, -1px, 0) scale(1.03);
+    box-shadow: 8px 28px 50px rgba(0, 0, 0, 0.4);
+    transition: all .2s;
+    cursor: pointer; }
+
 /*estilos de home*/
 .main-index-container {
   margin: auto;
@@ -185,16 +327,8 @@ header {
       .main-index-container .index-card-container {
         margin: 0 1.5rem; } }
   .main-index-container .index-card {
-    padding: 1rem;
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    gap: 1rem;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
-    .main-index-container .index-card:hover {
-      transform: translate3D(0, -1px, 0) scale(1.03);
-      box-shadow: 8px 28px 50px rgba(0, 0, 0, 0.4), 1px 6px 12px rgba(39, 44, 49, 0.04);
-      transition: all .2s;
-      cursor: pointer; }
+    grid-template-columns: 0.5fr 1fr; }
   .main-index-container .parrafo-card {
     margin-top: 1rem;
     font-family: "lato";
@@ -206,6 +340,19 @@ header {
     font-family: "lato";
     font-size: 1.3rem;
     color: black; }
+
+/*imports*/
+.card, .main-index-container .index-card, .main-bestsellers .bestsellers-container .card-bestsellers, .audiolibros-container .card-audiolibros, main .comunidad-card-container .comunidad-card, .main-about .card-about {
+  padding: 1rem;
+  background-color: white;
+  gap: 1rem;
+  border-radius: .5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
+  .card:hover, .main-index-container .index-card:hover, .main-bestsellers .bestsellers-container .card-bestsellers:hover, .audiolibros-container .card-audiolibros:hover, main .comunidad-card-container .comunidad-card:hover, .main-about .card-about:hover {
+    transform: translate3D(0, -1px, 0) scale(1.03);
+    box-shadow: 8px 28px 50px rgba(0, 0, 0, 0.4);
+    transition: all .2s;
+    cursor: pointer; }
 
 /*estilos de bestsellers*/
 .main-bestsellers .titulo-bestsellers {
@@ -237,12 +384,7 @@ header {
   .main-bestsellers .bestsellers-container .card-bestsellers {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1fr;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
-    .main-bestsellers .bestsellers-container .card-bestsellers:hover {
-      transform: translate3D(0, -1px, 0) scale(1.03);
-      box-shadow: 8px 28px 50px rgba(0, 0, 0, 0.4), 1px 6px 12px rgba(39, 44, 49, 0.04);
-      transition: all .2s; }
+    grid-auto-rows: 1fr; }
     @media screen and (max-width: 768px) {
       .main-bestsellers .bestsellers-container .card-bestsellers {
         display: flex;
@@ -254,17 +396,45 @@ header {
         margin: 0 1.5rem; } }
     .main-bestsellers .bestsellers-container .card-bestsellers .img-bestsellers {
       display: inline-block;
-      padding: 1.5rem; }
+      margin-top: 1.5rem; }
     .main-bestsellers .bestsellers-container .card-bestsellers .card-bestsellers-titulo-y-parrafo h2 {
-      margin: 1.5rem;
+      text-align: center;
+      margin: 1rem;
       font-family: "lato";
       font-style: italic; }
+      @media screen and (max-width: 580px) {
+        .main-bestsellers .bestsellers-container .card-bestsellers .card-bestsellers-titulo-y-parrafo h2 {
+          display: none; } }
   .main-bestsellers .bestsellers-container .card-bestsellers-titulo-y-parrafo p {
-    margin: 1.5rem;
+    margin-top: 1rem;
+    padding: 0 4rem;
     font-family: "lato", sans-serif; }
     @media screen and (max-width: 580px) {
       .main-bestsellers .bestsellers-container .card-bestsellers-titulo-y-parrafo p {
         display: none; } }
+
+.main-bestsellers .btn-container1 {
+  margin: auto;
+  display: flex;
+  justify-content: center; }
+  .main-bestsellers .btn-container1 h4 {
+    font-size: 1.3rem;
+    margin: auto;
+    color: whitesmoke;
+    font-family: "lato"; }
+
+/*imports*/
+.card, .main-index-container .index-card, .main-bestsellers .bestsellers-container .card-bestsellers, .audiolibros-container .card-audiolibros, main .comunidad-card-container .comunidad-card, .main-about .card-about {
+  padding: 1rem;
+  background-color: white;
+  gap: 1rem;
+  border-radius: .5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
+  .card:hover, .main-index-container .index-card:hover, .main-bestsellers .bestsellers-container .card-bestsellers:hover, .audiolibros-container .card-audiolibros:hover, main .comunidad-card-container .comunidad-card:hover, .main-about .card-about:hover {
+    transform: translate3D(0, -1px, 0) scale(1.03);
+    box-shadow: 8px 28px 50px rgba(0, 0, 0, 0.4);
+    transition: all .2s;
+    cursor: pointer; }
 
 /* estilos de audilibros*/
 .titulo-audiolibros {
@@ -277,7 +447,7 @@ header {
   margin: 1.5rem; }
 
 .audiolibros-container {
-  margin: 3rem auto;
+  margin: 3rem;
   max-width: 1500px;
   display: grid;
   grid-template-columns: 1fr;
@@ -299,12 +469,7 @@ header {
   .audiolibros-container .card-audiolibros {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     margin: 0 1.5rem; }
-    .audiolibros-container .card-audiolibros:hover {
-      transform: translate3D(0, -1px, 0) scale(1.03);
-      box-shadow: 8px 28px 50px rgba(0, 0, 0, 0.4), 1px 6px 12px rgba(39, 44, 49, 0.04);
-      transition: all .2s; }
     @media screen and (max-width: 768px) {
       .audiolibros-container .card-audiolibros {
         display: flex;
@@ -334,6 +499,19 @@ header {
     .audiolibros-container .card-audiolibros .card-audiolibros-titulo-y-parrafo p {
       margin: 1.5rem;
       font-family: "lato", sans-serif; }
+
+/*imports*/
+.card, .main-index-container .index-card, .main-bestsellers .bestsellers-container .card-bestsellers, .audiolibros-container .card-audiolibros, main .comunidad-card-container .comunidad-card, .main-about .card-about {
+  padding: 1rem;
+  background-color: white;
+  gap: 1rem;
+  border-radius: .5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
+  .card:hover, .main-index-container .index-card:hover, .main-bestsellers .bestsellers-container .card-bestsellers:hover, .audiolibros-container .card-audiolibros:hover, main .comunidad-card-container .comunidad-card:hover, .main-about .card-about:hover {
+    transform: translate3D(0, -1px, 0) scale(1.03);
+    box-shadow: 8px 28px 50px rgba(0, 0, 0, 0.4);
+    transition: all .2s;
+    cursor: pointer; }
 
 /*estilos de comunidad*/
 main .titulo-comunidad {
@@ -370,18 +548,13 @@ main .comunidad-card-container {
   main .comunidad-card-container .comunidad-card {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: 1fr 1fr;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
-    main .comunidad-card-container .comunidad-card:hover {
-      transform: translate3D(0, -1px, 0) scale(1.03);
-      box-shadow: 8px 28px 50px rgba(0, 0, 0, 0.4), 1px 6px 12px rgba(39, 44, 49, 0.04);
-      transition: all .2s; }
-    @media screen and (max-width: 580px) {
+    grid-template-columns: 1fr 1fr; }
+    @media screen and (max-width: 768px) {
       main .comunidad-card-container .comunidad-card {
         display: flex;
         flex-direction: column;
         margin: 0 1.5rem; } }
-  @media screen and (max-width: 580px) and (max-width: 580px) {
+  @media screen and (max-width: 768px) and (max-width: 580px) {
     main .comunidad-card-container .comunidad-card {
       display: flex;
       flex-direction: column;
@@ -413,6 +586,19 @@ main .comunidad-card-container {
         main .comunidad-card-container .comunidad-card p {
           display: none; } }
 
+/*imports*/
+.card, .main-index-container .index-card, .main-bestsellers .bestsellers-container .card-bestsellers, .audiolibros-container .card-audiolibros, main .comunidad-card-container .comunidad-card, .main-about .card-about {
+  padding: 1rem;
+  background-color: white;
+  gap: 1rem;
+  border-radius: .5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
+  .card:hover, .main-index-container .index-card:hover, .main-bestsellers .bestsellers-container .card-bestsellers:hover, .audiolibros-container .card-audiolibros:hover, main .comunidad-card-container .comunidad-card:hover, .main-about .card-about:hover {
+    transform: translate3D(0, -1px, 0) scale(1.03);
+    box-shadow: 8px 28px 50px rgba(0, 0, 0, 0.4);
+    transition: all .2s;
+    cursor: pointer; }
+
 /*estilos de about*/
 .main-about .titulo-about {
   margin-top: 1rem;
@@ -424,14 +610,16 @@ main .comunidad-card-container {
   padding: 1rem; }
 
 .main-about .card-about {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   margin: 1rem auto;
-  padding: 2rem 1rem;
-  max-width: 1500px;
+  padding: 1.5rem;
+  max-width: 1200px;
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 10rem; }
+  .main-about .card-about img {
+    margin: 1.5rem; }
   .main-about .card-about p {
-    margin-left: 2rem;
+    margin: 1.5rem;
     text-align: justify;
     font-family: "lato"; }
     @media screen and (max-width: 768px) {
@@ -459,46 +647,3 @@ main .comunidad-card-container {
         display: block;
         width: 100%;
         height: fit-content; } }
-
-/* estilos del footer*/
-.pie {
-  padding: auto;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-  .pie .about {
-    font-family: "lato", sans-serif;
-    font-size: 1.5rem;
-    color: #144272; }
-    .pie .about:hover {
-      font-size: 1.7rem;
-      transition: 0.2s; }
-  .pie .social-links {
-    display: flex;
-    gap: 1rem;
-    margin: 1rem; }
-    .pie .social-links #instagram :hover {
-      transform: scale(1.1); }
-    .pie .social-links #facebook :hover {
-      transform: scale(1.1); }
-    .pie .social-links #twitter :hover {
-      transform: scale(1.1); }
-
-/*boton siguiente*/
-.btn {
-  display: flex;
-  align-items: center;
-  height: 2.5rem;
-  width: 6.5rem;
-  background-color: #144272;
-  font-family: "Lato" , sans-serif;
-  font-size: 1.3rem;
-  margin: 1rem auto;
-  padding: 0.5rem;
-  border-radius: 0.3rem;
-  color: whitesmoke; }
-  .btn:hover {
-    transform: scale(1.1);
-    transition: 0.1s; }

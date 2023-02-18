@@ -1,0 +1,22 @@
+@import "components/icons";
+/*estilos del footer*/
+.pie{
+    padding: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    .social-links {
+        display: flex;
+        gap: 1rem;
+        margin: 1rem;
+        .icon-social{
+            @include hover-1;
+        }
+    }
+
+
+

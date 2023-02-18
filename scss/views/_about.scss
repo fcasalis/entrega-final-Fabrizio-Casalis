@@ -1,0 +1,67 @@
+/*imports*/
+@import "../components/card";
+
+/*estilos de about*/
+.main-about{
+    
+    .titulo-about {
+        margin-top: 1rem;
+        text-align: center;
+        font-family: "Lato";
+        font-style: italic;
+        font-size: 1.7rem;
+        color: #144272;
+        padding: 1rem;
+    
+    }
+    .card-about {
+        margin: 1rem auto;
+        padding: 1.5rem;
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @extend .card;
+        margin-bottom: 10rem;
+        img{
+            margin: 1.5rem;
+        }
+        p {
+            margin: 1.5rem;
+            text-align: justify;
+            font-family: "lato";
+            @include tablet{
+                margin: 1.5rem auto;
+            }
+        }
+         @include tablet {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 1.5rem;
+            .img-about{
+            display: block;
+            width: 100%;
+            height: fit-content
+            ;
+            }
+        }
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 1.5rem;
+            .img-about{
+            display: block;
+            width: 100%;
+            height: fit-content;
+            }
+        }
+     }
+
+        
+
+        
+
+}

@@ -1,0 +1,30 @@
+
+@import "../base/hover-effect";
+/*boton siguiente*/
+.btn-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+    
+    .btn{ 
+        margin-bottom: 1rem;
+        display: inline-block;
+        cursor: pointer;
+        background: $color-sec;
+        color: whitesmoke;
+        border-radius: .6rem;
+        padding: 8px 12px 8px;
+        font-family: "lato";
+        font-size: 1.2rem;
+        @include hover-1;
+    }
+    
+
+}
+
+
+:hover{
+    transform: translateY(-2px);
+}
