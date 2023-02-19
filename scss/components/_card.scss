@@ -1,15 +1,15 @@
 .card {
-    padding: 1rem;
-    background-color: $card-bg-color;
-    gap: 1rem;
-    
-    border-radius: .5rem;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    
-    &:hover{
-        transform: translate3D(0,-1px,0) scale(1.03); 
-        box-shadow: 8px 28px 50px rgba(0,0,0,0.4);
-        transition: all .2s; 
-        cursor: pointer;
-    }
+  padding: 1rem;
+  background-color: $card-bg-color;
+  gap: 1rem;
+
+  border-radius: 0.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    transform: translate3D(0, -1px, 0) scale(1.03);
+    box-shadow: 8px 28px 50px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s;
+    cursor: pointer;
+  }
 }

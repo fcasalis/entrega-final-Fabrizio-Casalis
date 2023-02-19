@@ -33,13 +33,18 @@
   perspective: 1000px; }
 
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0); }
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0); }
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-2px, 0, 0); }
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(2px, 0, 0); } }
 
 /*estilos del header*/
@@ -50,7 +55,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 1.5rem;
-  background-color: #0A2647;
+  background-color: #0a2647;
   transition: 0.3s; }
   @media screen and (max-width: 580px) {
     header {
@@ -67,13 +72,18 @@ header {
       perspective: 1000px; }
 
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0); }
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0); }
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-2px, 0, 0); }
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(2px, 0, 0); } }
   header .navbar1 {
     margin-right: 4rem;
@@ -92,8 +102,7 @@ header {
       justify-content: center;
       flex-direction: row;
       align-items: center;
-      z-index: 1;
-      transition: 0.5s; }
+      z-index: 1; }
       @media screen and (max-width: 580px) {
         header .navbar1 .menu1 {
           z-index: 1;
@@ -103,7 +112,7 @@ header {
           position: fixed;
           top: 0;
           right: -600px;
-          background: #0A2647;
+          background: #0a2647;
           width: 100%;
           height: auto;
           padding-top: 65px; } }
@@ -123,13 +132,18 @@ header {
           perspective: 1000px; }
 
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0); }
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0); }
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-2px, 0, 0); }
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(2px, 0, 0); } }
         @media screen and (max-width: 580px) {
           header .navbar1 .menu1 li a {
@@ -143,8 +157,7 @@ header {
       background: #fff;
       border-radius: 10px;
       cursor: pointer;
-      z-index: 2;
-      transition: 0.3s; }
+      z-index: 2; }
     header .navbar1 .hamburger:before,
     header .navbar1 .hamburger:after {
       content: "";
@@ -152,8 +165,7 @@ header {
       height: 4px;
       right: 0;
       background: #fff;
-      border-radius: 10px;
-      transition: 0.3s; }
+      border-radius: 10px; }
     header .navbar1 .hamburger:before {
       top: -10px;
       width: 20px; }
@@ -197,13 +209,18 @@ header {
   perspective: 1000px; }
 
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0); }
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0); }
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-2px, 0, 0); }
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(2px, 0, 0); } }
 
 /*estilos del footer*/
@@ -225,13 +242,18 @@ header {
     perspective: 1000px; }
 
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0); }
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0); }
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-2px, 0, 0); }
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(2px, 0, 0); } }
 
 /*boton*/
@@ -243,12 +265,12 @@ header {
   justify-content: center;
   margin: auto; }
   .btn-container .btn {
-    margin-bottom: 1rem;
+    margin: 1.5rem auto;
     display: inline-block;
     cursor: pointer;
     background: #144272;
     color: whitesmoke;
-    border-radius: .6rem;
+    border-radius: 0.6rem;
     padding: 8px 12px 8px;
     font-family: "lato";
     font-size: 1.2rem; }
@@ -258,17 +280,19 @@ header {
       perspective: 1000px; }
 
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0); }
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0); }
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-2px, 0, 0); }
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(2px, 0, 0); } }
-
-:hover {
-  transform: translateY(-2px); }
 
 /*views*/
 /*imports*/
@@ -276,12 +300,12 @@ header {
   padding: 1rem;
   background-color: white;
   gap: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
   .card:hover, .main-index-container .index-card:hover, .main-bestsellers .bestsellers-container .card-bestsellers:hover, .audiolibros-container .card-audiolibros:hover, main .comunidad-card-container .comunidad-card:hover, .main-about .card-about:hover {
     transform: translate3D(0, -1px, 0) scale(1.03);
     box-shadow: 8px 28px 50px rgba(0, 0, 0, 0.4);
-    transition: all .2s;
+    transition: all 0.2s;
     cursor: pointer; }
 
 /*estilos de home*/
@@ -292,7 +316,7 @@ header {
   grid-template-areas: "main-image" "main-texto" "index-card-container"; }
   .main-index-container .main-image-container {
     grid-area: main-image;
-    margin: 2.5rem  auto;
+    margin: 2.5rem auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
     .main-index-container .main-image-container .carousel-control-prev {
       z-index: 0; }
@@ -310,6 +334,9 @@ header {
       font-size: 2rem;
       color: #144272;
       margin: 1rem; }
+      @media screen and (max-width: 580px) {
+        .main-index-container .texto-mejores-libros h1 {
+          font-size: 1.6em; } }
   .main-index-container .index-card-container {
     grid-area: index-card-container;
     display: grid;
@@ -329,6 +356,13 @@ header {
   .main-index-container .index-card {
     display: grid;
     grid-template-columns: 0.5fr 1fr; }
+    @media screen and (max-width: 580px) {
+      .main-index-container .index-card {
+        height: 16rem;
+        width: 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
   .main-index-container .parrafo-card {
     margin-top: 1rem;
     font-family: "lato";
@@ -336,22 +370,28 @@ header {
     text-align: center;
     line-height: 100%;
     color: black; }
+    @media screen and (max-width: 580px) {
+      .main-index-container .parrafo-card {
+        display: none; } }
   .main-index-container .titulo-card {
     font-family: "lato";
     font-size: 1.3rem;
     color: black; }
+    @media screen and (max-width: 580px) {
+      .main-index-container .titulo-card {
+        font-size: 1.2em; } }
 
 /*imports*/
 .card, .main-index-container .index-card, .main-bestsellers .bestsellers-container .card-bestsellers, .audiolibros-container .card-audiolibros, main .comunidad-card-container .comunidad-card, .main-about .card-about {
   padding: 1rem;
   background-color: white;
   gap: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
   .card:hover, .main-index-container .index-card:hover, .main-bestsellers .bestsellers-container .card-bestsellers:hover, .audiolibros-container .card-audiolibros:hover, main .comunidad-card-container .comunidad-card:hover, .main-about .card-about:hover {
     transform: translate3D(0, -1px, 0) scale(1.03);
     box-shadow: 8px 28px 50px rgba(0, 0, 0, 0.4);
-    transition: all .2s;
+    transition: all 0.2s;
     cursor: pointer; }
 
 /*estilos de bestsellers*/
@@ -363,6 +403,9 @@ header {
   font-size: 2rem;
   color: #144272;
   padding: 1rem; }
+  @media screen and (max-width: 580px) {
+    .main-bestsellers .titulo-bestsellers {
+      font-size: 1.6em; } }
 
 .main-bestsellers .bestsellers-container {
   margin: 3rem auto;
@@ -398,6 +441,7 @@ header {
       display: inline-block;
       margin-top: 1.5rem; }
     .main-bestsellers .bestsellers-container .card-bestsellers .card-bestsellers-titulo-y-parrafo h2 {
+      color: black;
       text-align: center;
       margin: 1rem;
       font-family: "lato";
@@ -406,6 +450,7 @@ header {
         .main-bestsellers .bestsellers-container .card-bestsellers .card-bestsellers-titulo-y-parrafo h2 {
           display: none; } }
   .main-bestsellers .bestsellers-container .card-bestsellers-titulo-y-parrafo p {
+    color: black;
     margin-top: 1rem;
     padding: 0 4rem;
     font-family: "lato", sans-serif; }
@@ -428,26 +473,28 @@ header {
   padding: 1rem;
   background-color: white;
   gap: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
   .card:hover, .main-index-container .index-card:hover, .main-bestsellers .bestsellers-container .card-bestsellers:hover, .audiolibros-container .card-audiolibros:hover, main .comunidad-card-container .comunidad-card:hover, .main-about .card-about:hover {
     transform: translate3D(0, -1px, 0) scale(1.03);
     box-shadow: 8px 28px 50px rgba(0, 0, 0, 0.4);
-    transition: all .2s;
+    transition: all 0.2s;
     cursor: pointer; }
 
 /* estilos de audilibros*/
 .titulo-audiolibros {
-  margin-top: 1rem;
+  margin: 2rem auto;
   text-align: center;
   font-family: "Lato";
   font-style: italic;
   font-size: 2rem;
-  color: #144272;
-  margin: 1.5rem; }
+  color: #144272; }
+  @media screen and (max-width: 580px) {
+    .titulo-audiolibros {
+      font-size: 1.6em; } }
 
 .audiolibros-container {
-  margin: 3rem;
+  margin: 3rem auto;
   max-width: 1500px;
   display: grid;
   grid-template-columns: 1fr;
@@ -469,7 +516,7 @@ header {
   .audiolibros-container .card-audiolibros {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin: 0 1.5rem; }
+    margin: 0; }
     @media screen and (max-width: 768px) {
       .audiolibros-container .card-audiolibros {
         display: flex;
@@ -488,10 +535,7 @@ header {
         .audiolibros-container .card-audiolibros iframe {
           display: inline-block;
           width: 400px;
-          margin: 1.5rem; } }
-    @media screen and (max-width: 580px) {
-      .audiolibros-container .card-audiolibros .card-audiolibros-titulo-y-parrafo {
-        display: none; } }
+          margin: 1rem; } }
     .audiolibros-container .card-audiolibros .card-audiolibros-titulo-y-parrafo h2 {
       margin: 1.5rem;
       font-family: "lato";
@@ -499,18 +543,21 @@ header {
     .audiolibros-container .card-audiolibros .card-audiolibros-titulo-y-parrafo p {
       margin: 1.5rem;
       font-family: "lato", sans-serif; }
+      @media screen and (max-width: 580px) {
+        .audiolibros-container .card-audiolibros .card-audiolibros-titulo-y-parrafo p {
+          display: none; } }
 
 /*imports*/
 .card, .main-index-container .index-card, .main-bestsellers .bestsellers-container .card-bestsellers, .audiolibros-container .card-audiolibros, main .comunidad-card-container .comunidad-card, .main-about .card-about {
   padding: 1rem;
   background-color: white;
   gap: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
   .card:hover, .main-index-container .index-card:hover, .main-bestsellers .bestsellers-container .card-bestsellers:hover, .audiolibros-container .card-audiolibros:hover, main .comunidad-card-container .comunidad-card:hover, .main-about .card-about:hover {
     transform: translate3D(0, -1px, 0) scale(1.03);
     box-shadow: 8px 28px 50px rgba(0, 0, 0, 0.4);
-    transition: all .2s;
+    transition: all 0.2s;
     cursor: pointer; }
 
 /*estilos de comunidad*/
@@ -524,7 +571,7 @@ main .titulo-comunidad {
   padding: 1rem; }
   @media screen and (max-width: 580px) {
     main .titulo-comunidad {
-      font-size: 1.8em; } }
+      font-size: 1.6em; } }
 
 main .comunidad-card-container {
   max-width: 1300px;
@@ -591,23 +638,26 @@ main .comunidad-card-container {
   padding: 1rem;
   background-color: white;
   gap: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
   .card:hover, .main-index-container .index-card:hover, .main-bestsellers .bestsellers-container .card-bestsellers:hover, .audiolibros-container .card-audiolibros:hover, main .comunidad-card-container .comunidad-card:hover, .main-about .card-about:hover {
     transform: translate3D(0, -1px, 0) scale(1.03);
     box-shadow: 8px 28px 50px rgba(0, 0, 0, 0.4);
-    transition: all .2s;
+    transition: all 0.2s;
     cursor: pointer; }
 
 /*estilos de about*/
 .main-about .titulo-about {
-  margin-top: 1rem;
+  margin: 1.5rem;
   text-align: center;
   font-family: "Lato";
   font-style: italic;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   color: #144272;
   padding: 1rem; }
+  @media screen and (max-width: 580px) {
+    .main-about .titulo-about {
+      font-size: 1.6em; } }
 
 .main-about .card-about {
   margin: 1rem auto;
