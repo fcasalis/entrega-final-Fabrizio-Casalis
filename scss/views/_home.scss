@@ -32,7 +32,7 @@
       font-size: 2rem;
       color: #144272;
       margin: 1rem;
-      @include mobile{
+      @include mobile {
         font-size: 1.6em;
       }
     }
@@ -62,11 +62,11 @@
     grid-template-columns: 0.5fr 1fr;
     @extend .card;
     @include mobile {
-     height: 16rem;
-     width: 12rem;   
-     display: flex;
-     flex-direction: column;
-     align-items: center;
+      height: 16rem;
+      width: 12rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
   .parrafo-card {
@@ -76,16 +76,16 @@
     text-align: center;
     line-height: 100%;
     color: black;
-    @include mobile{
-        display: none;
+    @include mobile {
+      display: none;
     }
   }
   .titulo-card {
     font-family: "lato";
     font-size: 1.3rem;
     color: black;
-    @include mobile{
-        font-size: 1.2em;
+    @include mobile {
+      font-size: 1.2em;
     }
   }
 }
