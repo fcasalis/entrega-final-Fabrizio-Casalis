@@ -28,6 +28,8 @@ header {
     align-items: center;
     input:checked ~ .menu1 {
       right: 0px;
+      opacity: 1;
+      transform: translateY(0%);
     }
     @include mobile {
       right: 0px;
@@ -40,6 +42,9 @@ header {
       flex-direction: row;
       align-items: center;
       z-index: 1;
+      opacity: 0;
+      transform: translateY(-100%);
+      transition: opacity 0.3s ease, transform 0.3s ease;
 
       @include mobile {
         z-index: 1;
@@ -110,6 +115,7 @@ header {
       z-index: 3;
       cursor: pointer;
       opacity: 0;
+      transition: 0.5;
     }
     .hamburger,
     .toggle-menu {

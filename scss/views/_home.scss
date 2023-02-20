@@ -57,6 +57,7 @@
     }
   }
   .index-card {
+    min-height: 13.5rem;
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     @extend .card;

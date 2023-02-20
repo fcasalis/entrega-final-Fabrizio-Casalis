@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
     <!-- bootstrap cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -11,11 +12,10 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+      <!-- aos cdn -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" 
+    />
+    
     <!-- mis estilos -->
     <link href="css/styles.css" rel="stylesheet" />
 
@@ -41,7 +41,7 @@
 
     <main class="main-index-container">
       <div class="main-image-container">
-        <!-- <img src="/img/main.jpg" alt="libros"> -->
+        
         <!-- carousel de bootstrap -->
 
         <div id="carousel-main" class="carousel slide" data-bs-ride="carousel">
@@ -102,52 +102,68 @@
         </h1>
       </div>
       <div class="index-card-container">
-        <a href="https://a.co/d/h8qT6J5" target="_blank" class="index-card">
-          <img src="img/books/book1.jpg" alt="book1" class="imgbox" />
-          <div class="index-card-texto">
-            <h2 class="titulo-card">No broken Beast</h2>
-            <p class="parrafo-card">
-              "No Broken Beast" es un libro conmovedor y desgarrador que te
-              lleva a un viaje por la vida de un hombre luchando por encontrar
-              la curación y la redención.
-            </p>
-          </div>
-        </a>
-        <a href="https://a.co/d/eygFEL2" target="_blank" class="index-card">
-          <img src="img/books/book2.jpg" alt="book2" class="imgbox" />
-          <div class="index-card-texto">
-            <h2 class="titulo-card">Hanya Yangihara</h2>
-            <p class="parrafo-card">
-              Explora temas universales como la amistad, el amor y la soledad.
-              Con una escritura intensa y detallada, la autora crea personajes
-              complejos y realistas.
-            </p>
-          </div>
-        </a>
+        <div data-aos="zoom-in">
+          <a href="https://a.co/d/h8qT6J5" target="_blank" class="index-card">
+            <img src="img/books/book1.jpg" alt="book1" class="imgbox" />
+            <div class="index-card-texto">
+              <h2 class="titulo-card">No broken Beast</h2>
+              <p class="parrafo-card">
+                "No Broken Beast" es un libro conmovedor y desgarrador que te
+                lleva a un viaje por la vida de un hombre luchando por encontrar
+                la curación y la redención.
+              </p>
+            </div>
+          </a>
 
-        <a href="https://a.co/d/aMkSvfI" target="_blank" class="index-card">
-          <img src="img/books/book3.jpg" alt="book3" class="imgbox" />
-          <div class="index-card-texto">
-            <h2 class="titulo-card">Moonlight</h2>
-            <p class="parrafo-card">
-              Encantador y mágico,te lleva en una aventura llena de fantasía.
-              Con un mundo bien construido y personajes encantadores, la autora
-              te mantiene en vilo hasta el final.
-            </p>
-          </div>
-        </a>
+        </div>
+        <div data-aos="zoom-in">
+          <a href="https://a.co/d/eygFEL2" target="_blank" class="index-card">
+            <img src="img/books/book2.jpg" alt="book2" class="imgbox" />
+            <div class="index-card-texto">
+              <h2 class="titulo-card">Hanya Yangihara</h2>
+              <p class="parrafo-card">
+                Explora temas universales como la amistad, el amor y la soledad.
+                Con una escritura intensa y detallada, la autora crea personajes
+                complejos y realistas.
+              </p>
+            </div>
+          </a>
 
-        <a href="https://a.co/d/gRXB6M5" target="_blank" class="index-card">
-          <img src="img/books/book4.jpg" alt="book3" class="imgbox" />
-          <div class="index-card-texto">
-            <h2 class="titulo-card">Golden Stage</h2>
-            <p class="parrafo-card">
-              Spare es un relato detallado de la vida del principe Harry y sus
-              experiencia. Es una lectura emocionante y conmovedora que brinda
-              una visión íntima y honesta de su vida
-            </p>
-          </div>
-        </a>
+        </div>
+        <div data-aos="zoom-in">
+          <a href="https://a.co/d/aMkSvfI" target="_blank" class="index-card">
+            <img src="img/books/book3.jpg" alt="book3" class="imgbox" />
+            <div class="index-card-texto">
+              <h2 class="titulo-card">Moonlight</h2>
+              <p class="parrafo-card">
+                Encantador y mágico,te lleva en una aventura llena de fantasía.
+                Con un mundo bien construido y personajes encantadores, la autora
+                te mantiene en vilo hasta el final.
+              </p>
+            </div>
+          </a>
+
+        </div>
+        <div data-aos="zoom-in" >
+          <a href="https://a.co/d/gRXB6M5" target="_blank" class="index-card">
+            <img src="img/books/book4.jpg" alt="book3" class="imgbox" />
+            <div class="index-card-texto">
+              <h2 class="titulo-card">Golden Stage</h2>
+              <p class="parrafo-card">
+                Spare es un relato detallado de la vida del principe Harry y sus
+                experiencia. Es una lectura emocionante y conmovedora que brinda
+                una visión íntima y honesta de su vida
+              </p>
+            </div>
+          </a>
+
+        </div>
+        
+        
+
+       
+
+        
       </div>
     </main>
 
@@ -164,5 +180,19 @@
         ></a>
       </div>
     </footer>
+    <!-- script de aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+    </script>
+    <!-- script de bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
