@@ -29,9 +29,6 @@ header {
     input:checked ~ .menu1 {
       top: 0px;
       transition: 0.3s;
-      
-      
-
     }
     .menu1 {
       margin: 0;
@@ -41,8 +38,6 @@ header {
       flex-direction: row;
       align-items: center;
       z-index: 1;
-     
-
 
       @include mobile {
         z-index: 1;
@@ -50,7 +45,7 @@ header {
         flex-direction: column;
         align-items: center;
         position: fixed;
-        top:-600px;
+        top: -600px;
         right: 0px;
         background: $color-principal;
         width: 100%;
@@ -71,75 +66,71 @@ header {
           color: whitesmoke !important;
           padding: 25px;
 
-          
           @include mobile {
             padding: 30px;
             font-size: 24px;
-            
-
-            }
           }
         }
       }
     }
-    .hamburger {
-      position: relative;
-      width: 30px;
-      height: 4px;
-      background: #fff;
-      border-radius: 10px;
-      cursor: pointer;
-      z-index: 2;
-    }
-    .hamburger:before,
-    .hamburger:after {
-      content: "";
-      position: absolute;
-      height: 4px;
-      right: 0;
-      background: #fff;
-      border-radius: 10px;
-    }
-    .hamburger:before {
-      top: -10px;
-      width: 20px;
-    }
-    .hamburger:after {
-      top: 10px;
-      width: 25px;
-    }
-    .toggle-menu {
-      position: absolute;
-      width: 30px;
-      height: 100%;
-      z-index: 3;
-      cursor: pointer;
-      opacity: 0;
-      transition: 0.5;
-    }
-    .hamburger,
-    .toggle-menu {
-      display: none;
-    }
-    input:checked ~ .hamburger {
-      background: transparent;
-    }
-    input:checked ~ .hamburger:before {
-      top: 0;
-      transform: rotate(-45deg);
-      width: 30px;
-    }
-    input:checked ~ .hamburger:after {
-      top: 0;
-      transform: rotate(45deg);
-      width: 30px;
-    }
+  }
+  .hamburger {
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .hamburger:before,
+  .hamburger:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background: #fff;
+    border-radius: 10px;
+  }
+  .hamburger:before {
+    top: -10px;
+    width: 20px;
+  }
+  .hamburger:after {
+    top: 10px;
+    width: 25px;
+  }
+  .toggle-menu {
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5;
+  }
+  .hamburger,
+  .toggle-menu {
+    display: none;
+  }
+  input:checked ~ .hamburger {
+    background: transparent;
+  }
+  input:checked ~ .hamburger:before {
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+  }
+  input:checked ~ .hamburger:after {
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+  }
 
-    .hamburger,
-    .toggle-menu {
-      @include mobile {
-        display: block;
-      }
+  .hamburger,
+  .toggle-menu {
+    @include mobile {
+      display: block;
     }
   }
 }
