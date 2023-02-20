@@ -1,8 +1,7 @@
-/*reset*/
-/*reset*/
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+/*reset*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,18 +11,347 @@
   * ::-webkit-scrollbar {
     display: none; }
 
-/*links externos*/
-/*fonts*/
-/*iconos bootstrap*/
-/*utilities*/
-/*media-queries*/
-/*mobile*/
-/*tablet*/
-/*desktop*/
-/*colores*/
-/*components*/
-/*header*/
-/*efectos*/
+/*estilos de home*/
+.main-index-container {
+  margin: auto;
+  max-width: 1500px;
+  display: grid;
+  grid-template-areas: "main-image" "main-texto" "index-card-container"; }
+  .main-index-container .main-image-container {
+    grid-area: main-image;
+    margin: 2.5rem auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
+    .main-index-container .main-image-container .carousel-control-prev {
+      z-index: 0; }
+    .main-index-container .main-image-container .carousel-control-next {
+      z-index: 0; }
+    @media screen and (max-width: 768px) {
+      .main-index-container .main-image-container {
+        display: none; } }
+  .main-index-container .texto-mejores-libros {
+    grid-area: main-texto;
+    text-align: center; }
+    .main-index-container .texto-mejores-libros h1 {
+      font-family: "Lato";
+      font-style: italic;
+      font-size: 2rem;
+      color: #144272;
+      margin: 1rem; }
+      @media screen and (max-width: 580px) {
+        .main-index-container .texto-mejores-libros h1 {
+          font-size: 1.6em; } }
+  .main-index-container .index-card-container {
+    grid-area: index-card-container;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    margin: 1.5rem auto;
+    text-align: center; }
+    @media screen and (max-width: 768px) {
+      .main-index-container .index-card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 1.5rem; } }
+    @media screen and (max-width: 580px) {
+      .main-index-container .index-card-container {
+        margin: 0 1.5rem; } }
+  .main-index-container .index-card {
+    min-height: 13.5rem;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr; }
+    @media screen and (max-width: 580px) {
+      .main-index-container .index-card {
+        height: 16rem;
+        width: 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
+  .main-index-container .parrafo-card {
+    margin-top: 1rem;
+    font-family: "lato";
+    font-size: 1rem;
+    text-align: center;
+    line-height: 100%;
+    color: black; }
+    @media screen and (max-width: 580px) {
+      .main-index-container .parrafo-card {
+        display: none; } }
+  .main-index-container .titulo-card {
+    font-family: "lato";
+    font-size: 1.3rem;
+    color: black; }
+    @media screen and (max-width: 580px) {
+      .main-index-container .titulo-card {
+        font-size: 1.2em; } }
+
+/*estilos de bestsellers*/
+.main-bestsellers .titulo-bestsellers {
+  margin-top: 1rem;
+  text-align: center;
+  font-family: "Lato";
+  font-style: italic;
+  font-size: 2rem;
+  color: #144272;
+  padding: 1rem; }
+  @media screen and (max-width: 580px) {
+    .main-bestsellers .titulo-bestsellers {
+      font-size: 1.6em; } }
+
+.main-bestsellers .bestsellers-container {
+  margin: 3rem auto;
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem; }
+  @media screen and (max-width: 768px) {
+    .main-bestsellers .bestsellers-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr; } }
+  @media screen and (max-width: 580px) {
+    .main-bestsellers .bestsellers-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr; } }
+  .main-bestsellers .bestsellers-container .card-bestsellers {
+    min-height: 33.3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr; }
+    @media screen and (max-width: 768px) {
+      .main-bestsellers .bestsellers-container .card-bestsellers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 1.5rem; } }
+    @media screen and (max-width: 580px) {
+      .main-bestsellers .bestsellers-container .card-bestsellers {
+        margin: 0 1.5rem; } }
+    .main-bestsellers .bestsellers-container .card-bestsellers .img-bestsellers {
+      display: inline-block;
+      margin-top: 1.5rem; }
+    .main-bestsellers .bestsellers-container .card-bestsellers .card-bestsellers-titulo-y-parrafo h2 {
+      color: black;
+      text-align: center;
+      margin: 1rem;
+      font-family: "lato";
+      font-style: italic; }
+      @media screen and (max-width: 580px) {
+        .main-bestsellers .bestsellers-container .card-bestsellers .card-bestsellers-titulo-y-parrafo h2 {
+          display: none; } }
+  .main-bestsellers .bestsellers-container .card-bestsellers-titulo-y-parrafo p {
+    color: black;
+    margin-top: 1rem;
+    padding: 0 4rem;
+    font-family: "lato", sans-serif; }
+    @media screen and (max-width: 580px) {
+      .main-bestsellers .bestsellers-container .card-bestsellers-titulo-y-parrafo p {
+        display: none; } }
+
+.main-bestsellers .btn-container1 {
+  margin: auto;
+  display: flex;
+  justify-content: center; }
+  .main-bestsellers .btn-container1 h4 {
+    font-size: 1.3rem;
+    margin: auto;
+    color: whitesmoke;
+    font-family: "lato"; }
+
+/* estilos de audilibros*/
+.titulo-audiolibros {
+  margin: 2rem auto;
+  text-align: center;
+  font-family: "Lato";
+  font-style: italic;
+  font-size: 2rem;
+  color: #144272; }
+  @media screen and (max-width: 580px) {
+    .titulo-audiolibros {
+      font-size: 1.6em; } }
+
+.audiolibros-container {
+  margin: 3rem auto;
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4 1fr);
+  gap: 2rem; }
+  @media screen and (max-width: 768px) {
+    .audiolibros-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 4rem; } }
+  @media screen and (max-width: 580px) {
+    .audiolibros-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+  .audiolibros-container .card-audiolibros {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0; }
+    @media screen and (max-width: 768px) {
+      .audiolibros-container .card-audiolibros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 1.5rem; } }
+    @media screen and (max-width: 580px) {
+      .audiolibros-container .card-audiolibros {
+        display: flex;
+        align-items: center;
+        margin: 0 1.5rem; } }
+    .audiolibros-container .card-audiolibros iframe {
+      margin: 1.5rem; }
+      @media screen and (max-width: 580px) {
+        .audiolibros-container .card-audiolibros iframe {
+          display: inline-block;
+          width: 400px;
+          margin: 1rem; } }
+    .audiolibros-container .card-audiolibros .card-audiolibros-titulo-y-parrafo h2 {
+      margin: 1.5rem;
+      font-family: "lato";
+      font-style: italic; }
+    .audiolibros-container .card-audiolibros .card-audiolibros-titulo-y-parrafo p {
+      margin: 1.5rem;
+      font-family: "lato", sans-serif; }
+      @media screen and (max-width: 580px) {
+        .audiolibros-container .card-audiolibros .card-audiolibros-titulo-y-parrafo p {
+          display: none; } }
+
+/*estilos de comunidad*/
+main .titulo-comunidad {
+  margin-top: 1rem;
+  text-align: center;
+  font-family: "Lato";
+  font-style: italic;
+  font-size: 2rem;
+  color: #144272;
+  padding: 1rem; }
+  @media screen and (max-width: 580px) {
+    main .titulo-comunidad {
+      font-size: 1.6em; } }
+
+main .comunidad-card-container {
+  max-width: 1300px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3 1fr);
+  gap: 2rem; }
+  @media screen and (max-width: 768px) {
+    main .comunidad-card-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 1.5rem; } }
+  @media screen and (max-width: 580px) {
+    main .comunidad-card-container {
+      display: flex;
+      align-items: center;
+      margin: 0 1.5rem; } }
+  main .comunidad-card-container .comunidad-card {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr; }
+    @media screen and (max-width: 768px) {
+      main .comunidad-card-container .comunidad-card {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1.5rem; } }
+  @media screen and (max-width: 768px) and (max-width: 580px) {
+    main .comunidad-card-container .comunidad-card {
+      display: flex;
+      flex-direction: column;
+      margin: 0 1.5rem; } }
+    main .comunidad-card-container .comunidad-card .img-card-comunidad {
+      margin: 1.5rem 0rem 1.5rem 1.5rem;
+      height: auto; }
+      @media screen and (max-width: 580px) {
+        main .comunidad-card-container .comunidad-card .img-card-comunidad {
+          display: flex;
+          flex-direction: column;
+          margin: 1.5rem; } }
+    main .comunidad-card-container .comunidad-card h3 {
+      margin: 1.5rem 1.5rem 1rem 0;
+      font-family: "lato";
+      font-style: italic;
+      color: black; }
+      @media screen and (max-width: 580px) {
+        main .comunidad-card-container .comunidad-card h3 {
+          position: start;
+          text-align: center;
+          margin: 1rem; } }
+    main .comunidad-card-container .comunidad-card p {
+      margin: 1rem 1.5rem 1.5rem 0;
+      font-family: "lato", sans-serif;
+      font-size: 1rem;
+      color: black; }
+      @media screen and (max-width: 580px) {
+        main .comunidad-card-container .comunidad-card p {
+          display: none; } }
+
+/*estilos de about*/
+.main-about .titulo-about {
+  margin: 1.5rem;
+  text-align: center;
+  font-family: "Lato";
+  font-style: italic;
+  font-size: 1.8rem;
+  color: #144272;
+  padding: 1rem; }
+  @media screen and (max-width: 580px) {
+    .main-about .titulo-about {
+      font-size: 1.6em; } }
+
+.main-about .card-about {
+  margin: 1rem auto;
+  padding: 1.5rem;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 10rem; }
+  .main-about .card-about img {
+    margin: 1.5rem; }
+  .main-about .card-about p {
+    margin: 1.5rem;
+    text-align: justify;
+    font-family: "lato"; }
+    @media screen and (max-width: 768px) {
+      .main-about .card-about p {
+        margin: 1.5rem auto; } }
+  @media screen and (max-width: 768px) {
+    .main-about .card-about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 1.5rem; }
+      .main-about .card-about .img-about {
+        display: block;
+        width: 100%;
+        height: fit-content; } }
+  @media screen and (max-width: 580px) {
+    .main-about .card-about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 1.5rem; }
+      .main-about .card-about .img-about {
+        display: block;
+        width: 100%;
+        height: fit-content; } }
+
+/*estilos de los iconos*/
 .icon-header {
   font-size: 2.2rem;
   color: #144272;
@@ -49,7 +377,6 @@
   60% {
     transform: translate3d(2px, 0, 0); } }
 
-/*estilos del header*/
 header {
   position: relative;
   width: 100%;
@@ -178,8 +505,7 @@ header {
     header .toggle-menu {
       display: block; } }
 
-/*footer*/
-/*efectos*/
+/*estilos de los iconos*/
 .icon-header {
   font-size: 2.2rem;
   color: #144272;
@@ -238,8 +564,6 @@ header {
   60% {
     transform: translate3d(2px, 0, 0); } }
 
-/*views*/
-/*imports*/
 .card, .main-index-container .index-card, .main-bestsellers .bestsellers-container .card-bestsellers, .audiolibros-container .card-audiolibros, main .comunidad-card-container .comunidad-card, .main-about .card-about {
   padding: 1rem;
   background-color: white;
@@ -252,95 +576,32 @@ header {
     transition: all 0.2s;
     cursor: pointer; }
 
-/*estilos de home*/
-.main-index-container {
-  margin: auto;
-  max-width: 1500px;
-  display: grid;
-  grid-template-areas: "main-image" "main-texto" "index-card-container"; }
-  .main-index-container .main-image-container {
-    grid-area: main-image;
-    margin: 2.5rem auto;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
-    .main-index-container .main-image-container .carousel-control-prev {
-      z-index: 0; }
-    .main-index-container .main-image-container .carousel-control-next {
-      z-index: 0; }
-    @media screen and (max-width: 768px) {
-      .main-index-container .main-image-container {
-        display: none; } }
-  .main-index-container .texto-mejores-libros {
-    grid-area: main-texto;
-    text-align: center; }
-    .main-index-container .texto-mejores-libros h1 {
-      font-family: "Lato";
-      font-style: italic;
-      font-size: 2rem;
-      color: #144272;
-      margin: 1rem; }
-      @media screen and (max-width: 580px) {
-        .main-index-container .texto-mejores-libros h1 {
-          font-size: 1.6em; } }
-  .main-index-container .index-card-container {
-    grid-area: index-card-container;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1.5rem;
-    margin: 1.5rem auto;
-    text-align: center; }
-    @media screen and (max-width: 768px) {
-      .main-index-container .index-card-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 1.5rem; } }
-    @media screen and (max-width: 580px) {
-      .main-index-container .index-card-container {
-        margin: 0 1.5rem; } }
-  .main-index-container .index-card {
-    min-height: 13.5rem;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr; }
-    @media screen and (max-width: 580px) {
-      .main-index-container .index-card {
-        height: 16rem;
-        width: 12rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center; } }
-  .main-index-container .parrafo-card {
-    margin-top: 1rem;
-    font-family: "lato";
-    font-size: 1rem;
-    text-align: center;
-    line-height: 100%;
-    color: black; }
-    @media screen and (max-width: 580px) {
-      .main-index-container .parrafo-card {
-        display: none; } }
-  .main-index-container .titulo-card {
-    font-family: "lato";
-    font-size: 1.3rem;
-    color: black; }
-    @media screen and (max-width: 580px) {
-      .main-index-container .titulo-card {
-        font-size: 1.2em; } }
+/*estilos de los iconos*/
+.icon-header {
+  font-size: 2.2rem;
+  color: #144272;
+  margin: auto 0.5rem; }
 
-/*imports*/
-.card, .main-index-container .index-card, .main-bestsellers .bestsellers-container .card-bestsellers, .audiolibros-container .card-audiolibros, main .comunidad-card-container .comunidad-card, .main-about .card-about {
-  padding: 1rem;
-  background-color: white;
-  gap: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
-  .card:hover, .main-index-container .index-card:hover, .main-bestsellers .bestsellers-container .card-bestsellers:hover, .audiolibros-container .card-audiolibros:hover, main .comunidad-card-container .comunidad-card:hover, .main-about .card-about:hover {
-    transform: translate3D(0, -1px, 0) scale(1.03);
-    box-shadow: 8px 28px 50px rgba(0, 0, 0, 0.4);
-    transition: all 0.2s;
-    cursor: pointer; }
+.icon-social:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px; }
 
-/*efectos*/
-/*boton siguiente*/
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0); }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0); }
+  40%,
+  60% {
+    transform: translate3d(2px, 0, 0); } }
+
 .btn-container {
   display: flex;
   width: 100%;
@@ -377,383 +638,6 @@ header {
   60% {
     transform: translate3d(2px, 0, 0); } }
 
-/*estilos de bestsellers*/
-.main-bestsellers .titulo-bestsellers {
-  margin-top: 1rem;
-  text-align: center;
-  font-family: "Lato";
-  font-style: italic;
-  font-size: 2rem;
-  color: #144272;
-  padding: 1rem; }
-  @media screen and (max-width: 580px) {
-    .main-bestsellers .titulo-bestsellers {
-      font-size: 1.6em; } }
-
-.main-bestsellers .bestsellers-container {
-  margin: 3rem auto;
-  max-width: 1500px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 2rem; }
-  @media screen and (max-width: 768px) {
-    .main-bestsellers .bestsellers-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr; } }
-  @media screen and (max-width: 580px) {
-    .main-bestsellers .bestsellers-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr; } }
-  .main-bestsellers .bestsellers-container .card-bestsellers {
-    min-height: 33.3rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1fr; }
-    @media screen and (max-width: 768px) {
-      .main-bestsellers .bestsellers-container .card-bestsellers {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 1.5rem; } }
-    @media screen and (max-width: 580px) {
-      .main-bestsellers .bestsellers-container .card-bestsellers {
-        margin: 0 1.5rem; } }
-    .main-bestsellers .bestsellers-container .card-bestsellers .img-bestsellers {
-      display: inline-block;
-      margin-top: 1.5rem; }
-    .main-bestsellers .bestsellers-container .card-bestsellers .card-bestsellers-titulo-y-parrafo h2 {
-      color: black;
-      text-align: center;
-      margin: 1rem;
-      font-family: "lato";
-      font-style: italic; }
-      @media screen and (max-width: 580px) {
-        .main-bestsellers .bestsellers-container .card-bestsellers .card-bestsellers-titulo-y-parrafo h2 {
-          display: none; } }
-  .main-bestsellers .bestsellers-container .card-bestsellers-titulo-y-parrafo p {
-    color: black;
-    margin-top: 1rem;
-    padding: 0 4rem;
-    font-family: "lato", sans-serif; }
-    @media screen and (max-width: 580px) {
-      .main-bestsellers .bestsellers-container .card-bestsellers-titulo-y-parrafo p {
-        display: none; } }
-
-.main-bestsellers .btn-container1 {
-  margin: auto;
-  display: flex;
-  justify-content: center; }
-  .main-bestsellers .btn-container1 h4 {
-    font-size: 1.3rem;
-    margin: auto;
-    color: whitesmoke;
-    font-family: "lato"; }
-
-/*imports*/
-.card, .main-index-container .index-card, .main-bestsellers .bestsellers-container .card-bestsellers, .audiolibros-container .card-audiolibros, main .comunidad-card-container .comunidad-card, .main-about .card-about {
-  padding: 1rem;
-  background-color: white;
-  gap: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
-  .card:hover, .main-index-container .index-card:hover, .main-bestsellers .bestsellers-container .card-bestsellers:hover, .audiolibros-container .card-audiolibros:hover, main .comunidad-card-container .comunidad-card:hover, .main-about .card-about:hover {
-    transform: translate3D(0, -1px, 0) scale(1.03);
-    box-shadow: 8px 28px 50px rgba(0, 0, 0, 0.4);
-    transition: all 0.2s;
-    cursor: pointer; }
-
-/*efectos*/
-/*boton siguiente*/
-.btn-container {
-  display: flex;
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  margin: auto; }
-  .btn-container .btn {
-    margin: 1.5rem auto;
-    display: inline-block;
-    cursor: pointer;
-    background: #144272;
-    color: whitesmoke;
-    border-radius: 0.6rem;
-    padding: 8px 12px 8px;
-    font-family: "lato";
-    font-size: 1.2rem; }
-    .btn-container .btn:hover {
-      animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-      transform: translate3d(0, 0, 0);
-      perspective: 1000px; }
-
-@keyframes shake {
-  10%,
-  90% {
-    transform: translate3d(-1px, 0, 0); }
-  20%,
-  80% {
-    transform: translate3d(2px, 0, 0); }
-  30%,
-  50%,
-  70% {
-    transform: translate3d(-2px, 0, 0); }
-  40%,
-  60% {
-    transform: translate3d(2px, 0, 0); } }
-
-/* estilos de audilibros*/
-.titulo-audiolibros {
-  margin: 2rem auto;
-  text-align: center;
-  font-family: "Lato";
-  font-style: italic;
-  font-size: 2rem;
-  color: #144272; }
-  @media screen and (max-width: 580px) {
-    .titulo-audiolibros {
-      font-size: 1.6em; } }
-
-.audiolibros-container {
-  margin: 3rem auto;
-  max-width: 1500px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4 1fr);
-  gap: 2rem; }
-  @media screen and (max-width: 768px) {
-    .audiolibros-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 0 4rem; } }
-  @media screen and (max-width: 580px) {
-    .audiolibros-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; } }
-  .audiolibros-container .card-audiolibros {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin: 0; }
-    @media screen and (max-width: 768px) {
-      .audiolibros-container .card-audiolibros {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 1.5rem; } }
-    @media screen and (max-width: 580px) {
-      .audiolibros-container .card-audiolibros {
-        display: flex;
-        align-items: center;
-        margin: 0 1.5rem; } }
-    .audiolibros-container .card-audiolibros iframe {
-      margin: 1.5rem; }
-      @media screen and (max-width: 580px) {
-        .audiolibros-container .card-audiolibros iframe {
-          display: inline-block;
-          width: 400px;
-          margin: 1rem; } }
-    .audiolibros-container .card-audiolibros .card-audiolibros-titulo-y-parrafo h2 {
-      margin: 1.5rem;
-      font-family: "lato";
-      font-style: italic; }
-    .audiolibros-container .card-audiolibros .card-audiolibros-titulo-y-parrafo p {
-      margin: 1.5rem;
-      font-family: "lato", sans-serif; }
-      @media screen and (max-width: 580px) {
-        .audiolibros-container .card-audiolibros .card-audiolibros-titulo-y-parrafo p {
-          display: none; } }
-
-/*imports*/
-.card, .main-index-container .index-card, .main-bestsellers .bestsellers-container .card-bestsellers, .audiolibros-container .card-audiolibros, main .comunidad-card-container .comunidad-card, .main-about .card-about {
-  padding: 1rem;
-  background-color: white;
-  gap: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
-  .card:hover, .main-index-container .index-card:hover, .main-bestsellers .bestsellers-container .card-bestsellers:hover, .audiolibros-container .card-audiolibros:hover, main .comunidad-card-container .comunidad-card:hover, .main-about .card-about:hover {
-    transform: translate3D(0, -1px, 0) scale(1.03);
-    box-shadow: 8px 28px 50px rgba(0, 0, 0, 0.4);
-    transition: all 0.2s;
-    cursor: pointer; }
-
-/*efectos*/
-/*boton siguiente*/
-.btn-container {
-  display: flex;
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  margin: auto; }
-  .btn-container .btn {
-    margin: 1.5rem auto;
-    display: inline-block;
-    cursor: pointer;
-    background: #144272;
-    color: whitesmoke;
-    border-radius: 0.6rem;
-    padding: 8px 12px 8px;
-    font-family: "lato";
-    font-size: 1.2rem; }
-    .btn-container .btn:hover {
-      animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-      transform: translate3d(0, 0, 0);
-      perspective: 1000px; }
-
-@keyframes shake {
-  10%,
-  90% {
-    transform: translate3d(-1px, 0, 0); }
-  20%,
-  80% {
-    transform: translate3d(2px, 0, 0); }
-  30%,
-  50%,
-  70% {
-    transform: translate3d(-2px, 0, 0); }
-  40%,
-  60% {
-    transform: translate3d(2px, 0, 0); } }
-
-/*estilos de comunidad*/
-main .titulo-comunidad {
-  margin-top: 1rem;
-  text-align: center;
-  font-family: "Lato";
-  font-style: italic;
-  font-size: 2rem;
-  color: #144272;
-  padding: 1rem; }
-  @media screen and (max-width: 580px) {
-    main .titulo-comunidad {
-      font-size: 1.6em; } }
-
-main .comunidad-card-container {
-  max-width: 1300px;
-  margin: 2rem auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3 1fr);
-  gap: 2rem; }
-  @media screen and (max-width: 768px) {
-    main .comunidad-card-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 0 1.5rem; } }
-  @media screen and (max-width: 580px) {
-    main .comunidad-card-container {
-      display: flex;
-      align-items: center;
-      margin: 0 1.5rem; } }
-  main .comunidad-card-container .comunidad-card {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: 1fr 1fr; }
-    @media screen and (max-width: 768px) {
-      main .comunidad-card-container .comunidad-card {
-        display: flex;
-        flex-direction: column;
-        margin: 0 1.5rem; } }
-  @media screen and (max-width: 768px) and (max-width: 580px) {
-    main .comunidad-card-container .comunidad-card {
-      display: flex;
-      flex-direction: column;
-      margin: 0 1.5rem; } }
-    main .comunidad-card-container .comunidad-card .img-card-comunidad {
-      margin: 1.5rem 0rem 1.5rem 1.5rem;
-      height: auto; }
-      @media screen and (max-width: 580px) {
-        main .comunidad-card-container .comunidad-card .img-card-comunidad {
-          display: flex;
-          flex-direction: column;
-          margin: 1.5rem; } }
-    main .comunidad-card-container .comunidad-card h3 {
-      margin: 1.5rem 1.5rem 1rem 0;
-      font-family: "lato";
-      font-style: italic;
-      color: black; }
-      @media screen and (max-width: 580px) {
-        main .comunidad-card-container .comunidad-card h3 {
-          position: start;
-          text-align: center;
-          margin: 1rem; } }
-    main .comunidad-card-container .comunidad-card p {
-      margin: 1rem 1.5rem 1.5rem 0;
-      font-family: "lato", sans-serif;
-      font-size: 1rem;
-      color: black; }
-      @media screen and (max-width: 580px) {
-        main .comunidad-card-container .comunidad-card p {
-          display: none; } }
-
-/*imports*/
-.card, .main-index-container .index-card, .main-bestsellers .bestsellers-container .card-bestsellers, .audiolibros-container .card-audiolibros, main .comunidad-card-container .comunidad-card, .main-about .card-about {
-  padding: 1rem;
-  background-color: white;
-  gap: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
-  .card:hover, .main-index-container .index-card:hover, .main-bestsellers .bestsellers-container .card-bestsellers:hover, .audiolibros-container .card-audiolibros:hover, main .comunidad-card-container .comunidad-card:hover, .main-about .card-about:hover {
-    transform: translate3D(0, -1px, 0) scale(1.03);
-    box-shadow: 8px 28px 50px rgba(0, 0, 0, 0.4);
-    transition: all 0.2s;
-    cursor: pointer; }
-
-/*estilos de about*/
-.main-about .titulo-about {
-  margin: 1.5rem;
-  text-align: center;
-  font-family: "Lato";
-  font-style: italic;
-  font-size: 1.8rem;
-  color: #144272;
-  padding: 1rem; }
-  @media screen and (max-width: 580px) {
-    .main-about .titulo-about {
-      font-size: 1.6em; } }
-
-.main-about .card-about {
-  margin: 1rem auto;
-  padding: 1.5rem;
-  max-width: 1200px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 10rem; }
-  .main-about .card-about img {
-    margin: 1.5rem; }
-  .main-about .card-about p {
-    margin: 1.5rem;
-    text-align: justify;
-    font-family: "lato"; }
-    @media screen and (max-width: 768px) {
-      .main-about .card-about p {
-        margin: 1.5rem auto; } }
-  @media screen and (max-width: 768px) {
-    .main-about .card-about {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 0 1.5rem; }
-      .main-about .card-about .img-about {
-        display: block;
-        width: 100%;
-        height: fit-content; } }
-  @media screen and (max-width: 580px) {
-    .main-about .card-about {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 0 1.5rem; }
-      .main-about .card-about .img-about {
-        display: block;
-        width: 100%;
-        height: fit-content; } }
+/*estilos generales*/
+body {
+  background: #f1f6f9; }

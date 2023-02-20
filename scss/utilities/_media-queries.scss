@@ -1,18 +1,18 @@
-/*media-queries*/
 
-/*mobile*/
+
+
 @mixin mobile {
   @media screen and (max-width: 580px) {
     @content;
   }
 }
-/*tablet*/
+
 @mixin tablet {
   @media screen and (max-width: 768px) {
     @content;
   }
 }
-/*desktop*/
+
 @mixin min-desktop {
   @media screen and (min-width: 769px) {
     @content;

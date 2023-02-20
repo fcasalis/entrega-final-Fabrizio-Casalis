@@ -1,34 +1,40 @@
-/*reset*/
 
-@import "scss/base/reset";
 
-/*links externos*/
 
-/*fonts*/
 
+
+
+// google fonts 
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-/*iconos bootstrap*/
 
+// iconos de boostrap
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-/*utilities*/
 
-@import "scss/utilities/media-queries";
-@import "scss/utilities/variables";
+// reset
+@import "../base/reset";
 
-/*components*/
+//views
+@import "../views/home";
+@import "../views/bestsellers";
+@import "../views/audiolibros";
+@import "../views/comunidad";
+@import "../views/about";
 
-/*header*/
-@import "scss/components/header";
-/*footer*/
-@import "scss/components/footer";
+//utilities
+@import "../utilities/media-queries";
+@import "../utilities/variables";
+//componentes
 
+@import "../components/header";
+@import "../components/footer";
+@import "../components/card";
+@import "../components/icons";
+@import "../components/btn";
 
-/*views*/
-@import "scss/views/home";
-@import "scss/views/bestsellers";
-@import "scss/views/audiolibros";
-@import "scss/views/comunidad";
-@import "scss/views/about";
+//base
+@import "../base/hover-effect";
+@import "../base/estilos-generales";
+
