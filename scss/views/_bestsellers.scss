@@ -1,8 +1,11 @@
-
 @import "../utilities/media-queries";
 
 /*estilos de bestsellers*/
 .main-bestsellers {
+  padding: 1.5rem;
+  max-width: 1500px;
+  margin: 0 auto;
+
   .titulo-bestsellers {
     margin-top: 1rem;
     text-align: center;
@@ -11,14 +14,14 @@
     font-size: 2rem;
     color: #144272;
     padding: 1rem;
-    @include mobile{
-        font-size: 1.6em;
+    @include mobile {
+      font-size: 1.6em;
     }
-
   }
 
   .bestsellers-container {
-    margin: 3rem auto;
+    margin: 3rem 2rem;
+    justify-content: center;
     max-width: 1500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -27,15 +30,15 @@
     @include tablet {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: repeat(4, 1fr);
     }
     @include mobile {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: repeat(4, 1fr);
     }
     .card-bestsellers {
-      min-height: 33.3rem;
+      min-height: 39rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-auto-rows: 1fr;

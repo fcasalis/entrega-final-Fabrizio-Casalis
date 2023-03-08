@@ -1,10 +1,9 @@
-
 @import "../utilities/media-queries";
 
 /*estilos de home*/
 .main-index-container {
   margin: auto;
-  max-width: 1500px;
+  max-width: 1300px;
   display: grid;
   grid-template-areas:
     "main-image"
@@ -21,72 +20,85 @@
       z-index: 0;
     }
     @include tablet {
-      display: none;
+      height: fit-content;
+      margin-top: 1.5rem;
+      margin: 2 auto;
     }
   }
-  .texto-mejores-libros {
-    grid-area: main-texto;
-    text-align: center;
-    h1 {
-      font-family: "Lato";
-      font-style: italic;
-      font-size: 2rem;
-      color: #144272;
-      margin: 1rem;
-      @include mobile {
-        font-size: 1.6em;
-      }
-    }
-  }
-  .index-card-container {
-    grid-area: index-card-container;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1.5rem;
-    margin: 1.5rem auto;
-    text-align: center;
-
+}
+.texto-mejores-libros {
+  grid-area: main-texto;
+  text-align: center;
+  h1 {
+    font-family: "Lato";
+    font-style: italic;
+    font-size: 2rem;
+    color: #144272;
+    margin: 1rem;
     @include tablet {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0 1.5rem;
+      margin-bottom: 1.5rem;
+      margin-top: 0;
     }
+    @include mobile {
+      font-size: 1.6em;
+    }
+  }
+}
+.index-card-container {
+  grid-area: index-card-container;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem auto;
+  text-align: center;
 
-    @include mobile {
-      margin: 0 1.5rem;
-    }
-  }
-  .index-card {
-    min-height: 13.5rem;
+  @include tablet {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    @extend .card;
-    @include mobile {
-      height: 16rem;
-      width: 12rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    margin: 0 1.5rem;
   }
-  .parrafo-card {
-    margin-top: 1rem;
-    font-family: "lato";
-    font-size: 1rem;
-    text-align: center;
-    line-height: 100%;
-    color: black;
-    @include mobile {
-      display: none;
-    }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
   }
-  .titulo-card {
-    font-family: "lato";
-    font-size: 1.3rem;
-    color: black;
-    @include mobile {
-      font-size: 1.2em;
-    }
+}
+.index-card {
+  min-height: 17rem;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  @extend .card;
+  @include tablet {
+    min-height: 14rem;
+  }
+  @include mobile {
+    min-height: auto;
+    height: 16rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.parrafo-card {
+  margin-top: 1rem;
+  font-family: "lato";
+  font-size: 1rem;
+  text-align: center;
+  line-height: 100%;
+  color: black;
+  @include mobile {
+    display: none;
+  }
+}
+.titulo-card {
+  font-family: "lato";
+  font-size: 1.3rem;
+  color: black;
+  @include mobile {
+    font-size: 1.2em;
   }
 }

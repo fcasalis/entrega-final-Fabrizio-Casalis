@@ -1,8 +1,10 @@
 @import "../utilities/media-queries";
 
-
 /*estilos de about*/
 .main-about {
+  padding: 3rem;
+  margin-bottom: 13rem;
+
   .titulo-about {
     margin: 1.5rem;
     text-align: center;
@@ -11,6 +13,7 @@
     font-size: 1.8rem;
     color: #144272;
     padding: 1rem;
+
     @include mobile {
       font-size: 1.6em;
     }
@@ -21,8 +24,9 @@
     max-width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 4rem;
     @extend .card;
-    margin-bottom: 10rem;
+
     img {
       margin: 1.5rem;
     }
@@ -33,13 +37,18 @@
       @include tablet {
         margin: 1.5rem auto;
       }
+      .ocultar-texto {
+        @include mobile {
+          display: none;
+        }
+      }
     }
     @include tablet {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 0 1.5rem;
+      margin: 4rem 1.5rem;
       .img-about {
         display: block;
         width: 100%;
@@ -51,7 +60,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 0 1.5rem;
+      margin: 4rem 1.5rem;
+
       .img-about {
         display: block;
         width: 100%;

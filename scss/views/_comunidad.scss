@@ -1,7 +1,10 @@
 @import "../utilities/media-queries";
 
 /*estilos de comunidad*/
-main {
+.main-comunidad {
+  padding: 1.5rem;
+  max-width: 1300px;
+  margin: 0 auto;
   .titulo-comunidad {
     margin-top: 1rem;
     text-align: center;
@@ -16,46 +19,50 @@ main {
   }
   .comunidad-card-container {
     max-width: 1300px;
-    margin: 2rem auto;
+    margin: 2rem 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3 1fr);
     gap: 2rem;
     @include tablet {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 0 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
     @include mobile {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      margin: 0 1.5rem;
     }
     .comunidad-card {
       display: grid;
       gap: 1.5rem;
       grid-template-columns: 1fr 1fr;
+      min-height: 20rem;
       @extend .card;
       @include tablet {
         display: flex;
         flex-direction: column;
-        margin: 0 1.5rem;
+        align-items: center;
+        justify-content: center;
+        min-height: 33rem;
         @include mobile {
           display: flex;
           flex-direction: column;
           margin: 0 1.5rem;
+          min-height: 100%;
         }
       }
       .img-card-comunidad {
         margin: 1.5rem 0rem 1.5rem 1.5rem;
         height: auto;
+        @include tablet {
+          margin: 2rem auto;
+        }
 
         @include mobile {
           display: flex;
           flex-direction: column;
-          margin: 1.5rem;
+          margin: 1.2rem;
         }
       }
       h3 {
@@ -63,10 +70,14 @@ main {
         font-family: "lato";
         font-style: italic;
         color: black;
+        @include tablet {
+          text-align: center;
+          margin: auto;
+        }
         @include mobile {
+          margin: auto;
           position: start;
           text-align: center;
-          margin: 1rem;
         }
       }
       p {
